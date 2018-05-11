@@ -6,4 +6,4 @@ RUN npm install
 VOLUME /apps/config
 RUN mv ./config/production.json.example ./config/production.json
 EXPOSE 8083
-CMD NODE_ENV=production node server.js.
+CMD NODE_ENV=production node server.js. && tail -f /dev/null
